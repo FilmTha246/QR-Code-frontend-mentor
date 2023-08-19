@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--Light-gray);
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --font-family: 'Outfit', sans-serif;
+}
+
+main {
+    background-color: var(--Light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.container {
+    background-color: var(--white);
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px #BDCDD6;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.container_title {
+    font-family: var(--font-family);
+    font-size: 20px;
+    text-align: center;
+    color: var(--Dark-blue);
+    padding: 0 20px 10px 20px;
+}
+
+.container_content {
+    font-family: var(--font-family);
+    font-size: 15px;
+    text-align: center;
+    color: var(--Grayish-blue);
+    padding: 0 20px 10px 20px;
+}
+
+footer {
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        background-color: var(--white);
+        width: 200px;
+        height: 350px;
+        border-radius: 20px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    img {
+        width: 180px;
+        height: 180px;
+        box-sizing: border-box;
+        display: block;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    .container_title {
+        font-family: var(--font-family);
+        font-size: 15px;
+        text-align: center;
+        color: var(--Dark-blue);
+        padding: 0 15px 10px 15px;
+    }
+
+    .container_content {
+        font-family: var(--font-family);
+        font-size: 10px;
+        text-align: center;
+        color: var(--Grayish-blue);
+        padding: 0 15px 10px 15px;
+        margin-top: 10px;
+    }
+
+    footer {
+        text-align: center;
+        font-family: var(--font-family);
+        font-size: 15px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+}
